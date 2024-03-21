@@ -50,6 +50,7 @@
 .text-wrapper {
     grid-area: t; 
     margin-left: 25px;
+    padding-top: 35px;
 }
 h2 {
     font-family: "Jost-VF";
@@ -65,4 +66,45 @@ h1 {
 .icon-wrapper {
     grid-area: r;
     margin-right: 25px;
+    text-align: right;
+}
+h3 {
+    font-family: 'Jost-VF';
+    font-style: italic;
+    font-weight: 150;
+    font-size: 40px;
+    line-height: 58px;
+    color: #373737;
+    grid-area: t;
+}
+.play-wrapper {
+    grid-area: h;
+}
+.header-wrapper {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+        "t t t t t t t t t t h h";
+}
+h4 {
+position: absolute;
+width: 803px;
+height: 252px;
+left: calc(50% - 803px/2 - 0.5px);
+top: 127px;
+
+font-family: 'Linefont';
+font-style: normal;
+font-weight: 45;
+font-size: 180px;
+line-height: 252px;
+text-align: center;
+
+color: #373737;
+font-stretch: 163;
+
+
 }
