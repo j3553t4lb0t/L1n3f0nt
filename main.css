@@ -96,7 +96,7 @@ height: 252px;
 left: calc(50% - 803px/2 - 0.5px);
 top: 127px;
 
-font-family: 'Linefont';
+font-family: "Linefont";
 font-style: normal;
 font-weight: 45;
 font-size: 180px;
@@ -105,6 +105,4 @@ text-align: center;
 
 color: #373737;
 font-stretch: 163;
-
-
 }
