@@ -1,6 +1,6 @@
-*{
+/* *{
     border: 3px blue dashed;
-}
+} */
 @font-face {
     src: url("fonts/Linefont-VariableFont_wdth\,wght.woff2"), format("woff2");
     font-family: 'Linefont';
@@ -16,7 +16,7 @@
     }
 
     body{
-        background-color: whitesmoke;
+        background-color: #f8f8f8;
 
 
     }
@@ -31,19 +31,21 @@ h1 {
     font-family: "Linefont";
     font-size: 11pt;
     font-variation-settings: "wdth" 163, "wght" 45;
+    color:#373737
 }
 h3 {
     font-family: "Linefont";
     font-size: 25pt;
     font-variation-settings: "wdth" 163, "wght" 20;
+    color:#373737
 }
 h4 {
     font-family: "Jost-VF";
     font-size: 13pt;
     font-variation-settings: "wght" 25, "ital" 1;
     line-height: 40px;
+    color:#373737
 }
-
 
 .header-wrapper {
     height: 100%;
@@ -54,105 +56,204 @@ h4 {
     grid-template-areas: 
         "q q q q q q q q q q v l";
 }
-.header-title-wrap {
-    grid-area: q;
-}
-.play-wrapper {
-    grid-area: v;
-    margin-top: 30px;
-}
-.download-wrapper {
-    grid-area: l;
-    margin-top: 30px;
-}
-.play {
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.download {
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.title {
-    font-family: 'Jost-VF';
-    font-style: italic;
-    font-weight: 150;
-    font-size: 40px;
-    line-height: 58px;
-    color: #373737;
-    font-variation-settings: "wght" 150, "ital" 1;
-    margin-left: 20px;
-}
-
+    .header-title-wrap {
+        grid-area: q;
+    }
+    .play-wrapper {
+        grid-area: v;
+        margin-top: 30px;
+    }
+    .download-wrapper {
+        grid-area: l;
+        margin-top: 30px;
+    }
+    .play {
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        color:#373737
+    }
+    .download {
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        color:#373737
+    }
+    .title {
+        font-family: 'Jost-VF';
+        font-style: italic;
+        font-weight: 150;
+        font-size: 40px;
+        line-height: 58px;
+        color: #373737;
+        font-variation-settings: "wght" 150, "ital" 1;
+        margin-left: 20px;
+    }
 
 .body-wrapper {
-    border: 3px solid hotpink;
     height: 100%;
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto 300px auto auto auto auto auto auto;
     grid-template-areas: 
         "a a a a b b b b a a a a"
         "a a a a c c c c a a a a"
         "a d d d d a a u u a a a"
-        "a e e e e a a u u a a a";
+        "a e e e e a a u u a a a"
+        "a a a a a a a a a a a a"
+        "a a a a a a a a a a a a"
+        "a a a a a a a a a a a a";
 }
-.hero {
-    text-align: center;
-    font-family: "Linefont";
-    font-size: 180px;
-    line-height: 252px;
-    font-variation-settings: "wdth" 163, "wght" 10;
+    .hero {
+        text-align: center;
+        font-family: "Linefont";
+        font-size: 180px;
+        line-height: 252px;
+        font-variation-settings: "wdth" 163, "wght" 10;
+        color: #373737;
+        grid-column-start: 4;
+        grid-column-end: 10;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .hero-jost {
+    text-align: center; 
+    grid-column-start: 6;
+    grid-column-end: 8;
+    margin-bottom: 75px;
+    grid-row-start: 2;
+    }
+    .body-description-lf {
+        grid-row-start: 3;
+        grid-column-start: 3;
+        grid-column-end: 7;
+        margin-bottom: 0;
+    }
+    .body-description-jost {
+        grid-row-start: 4;
+        grid-column-start: 3;
+        grid-column-end: 7;
+    }
+
+    .weight-list {
+        grid-column-start: 9;
+        grid-column-end: 11;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        text-align: left;
+        margin-top: 0;
+    }
+    h5 {
+        font-size: 23pt;
+        font-family: "Jost-VF";
+        font-variation-settings: "wght" 100;
+        line-height: 50px;
+        letter-spacing: 0.4em;
+
     color: #373737;
-    grid-column-start: 4;
-    grid-column-end: 10;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-.hero-jost {
-  text-align: center; 
-  grid-column-start: 6;
-  grid-column-end: 8;
-  margin-top: px;
-  grid-row-start: 2;
-}
+    }
+    .stretch {
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 5;
+    }
+    h6 {
+        font-family: 'Linefont';
+        font-size: 60pt;
+        font-variation-settings: "wdth" 200, "wght" 15;
+        color: #373737;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    .loooong {
+        font-variation-settings: "wght" 100, "ital" 1;
+        text-align: center;
+        font-size: 18pt;
+        margin-top: 0;
+    }
+    .shrink {
+        grid-column-end: 11;
+        grid-column-start:9;
+        grid-row-start: 5;
+    }
+    .honey-i-shrunk-the-text {
+        font-variation-settings: "wght" 100, "ital" 1;
+        text-align: center;
+        font-size: 18pt;
+        margin-top: 0;
+        letter-spacing: -0.1em;
+    }
+    .shunk {
+        font-variation-settings: "wdth" 0, "wght" 15;
 
-.body-description-lf {
-    grid-row-start: 3;
-    grid-column-start: 4;
-    grid-column-end: 7;
-    margin-bottom: 0;
+    }
+
+.baudry-two-wrapper {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: 
+        "a a a a b b b b a a a a"
+        "a a a a c c c c a a a a"
+        "a d d d d a a u u a a a"
+        "a e e e e a a u u a a a"
+        "a a a a a a a a a a a a"
+        "a a a a a a a a a a a a"
+        "a a a a a a a a a a a a"
+        "a a a a a a a a a a a a"
+        "a a a a a a a a a a a a";
 }
-.body-description-jost {
-    grid-row-start: 4;
-    grid-column-start: 4;
-    grid-column-end: 7;
-}
-
-.weight-list {
-    grid-column-start: 8;
-    grid-column-end: 10;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    text-align: left;
-    margin-top: 0;
-}
-h5 {
-    font-size: 35px;
-    font-family: "Jost-VF";
-    font-variation-settings: "wght" 100;
-    font-size: 30px;
-    line-height: 60px;
-    letter-spacing: 0.4em;
-
-color: #373737;
-
-}
-
-
+    .mountain {
+        text-align: center;
+        grid-row-start: 1;
+        grid-column-start: 4;
+        grid-column-end: 9;
+        font-size: 50pt;
+    }
+    .rock {
+        text-align: center;
+        grid-row-start: 2;
+        grid-column-start: 4;
+        grid-column-end: 9;
+        font-size: 15pt;
+        font-weight: 100;
+    }
+    .translate {
+        text-align: center;
+        grid-row-start: 3;
+        grid-column-start: 4;
+        grid-column-end: 9;
+        font-size: 50pt;
+        margin-top:75px;
+    }
+    .transwhat {
+        text-align: center;
+        grid-row-start: 4;
+        grid-column-start: 4;
+        grid-column-end: 9;
+        font-size: 15pt;
+        font-weight: 100;
+    }
+    .lang {
+        text-align: center;
+        grid-row-start: 5;
+        grid-column-start: 4;
+        grid-column-end: 9;
+        font-size: 50pt;
+        margin-top: 75px;
+    }
+    .dmitry {
+        text-align: center;
+        grid-row-start: 6;
+        grid-column-start: 4;
+        grid-column-end: 9;
+        font-size: 15pt;
+        font-weight: 100;   
+    }
 
 .footer-wrapper {
     height: 100%;
@@ -166,33 +267,22 @@ color: #373737;
         ". f f f f f f f f r r ."
         ". f f f f f f f f g g .";
 }
-.text-wrapper {
-    grid-area: t; 
-    margin-left: 25px;
-    padding-top: 35px;
-}
-.icon-wrapper {
-    grid-area: r;
-    margin-right: 25px;
-    text-align: right;
-    margin-bottom: 0;
-    margin-top: 50px;
-}
-.tumblr {
-    grid-area: g;
-    margin-top: 50px;
-}
+    .text-wrapper {
+        grid-area: t; 
+        margin-left: 25px;
+        padding-top: 35px;
+    }
+    .icon-wrapper {
+        grid-area: r;
+        margin-right: 25px;
+        text-align: right;
+        margin-bottom: 0;
+        margin-top: 50px;
+    }
+    .tumblr {
+        grid-area: g;
+        margin-top: 50px;
+    }
 
 
-
-/* Thin Extra Light Light Regular Medium Semi Bold Bold Extra Bold Black */
-
-font-family: 'Jost';
-font-style: normal;
-font-weight: 200;
-font-size: 30px;
-line-height: 60px;
-letter-spacing: 0.4em;
-
-color: #373737;
 
