@@ -89,6 +89,19 @@ h3 {
     grid-template-areas: 
         "t t t t t t t t t t h h";
 }
+.body-wrapper {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+        "t t t w w w w w w t t t"
+        "t t t t t t t t t t t t"
+        "t t t t t t t t t t t t"
+        "t t t t t t t t t t t t"
+        "t t t t t t t t t t t t";
+}
 h4 {
 position: absolute;
 width: 803px;
@@ -98,11 +111,11 @@ top: 127px;
 
 font-family: "Linefont";
 font-style: normal;
-font-weight: 45;
 font-size: 180px;
 line-height: 252px;
 text-align: center;
+font-variation-settings: "wdth" 163, "wght" 15;
 
 color: #373737;
-font-stretch: 163;
+grid-area: w
 }
