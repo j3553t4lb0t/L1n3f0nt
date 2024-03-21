@@ -1,0 +1,68 @@
+*{
+    /* border: 3px blue dashed; */
+}
+@font-face {
+    src: url("fonts/Linefont-VariableFont_wdth\,wght.woff2"), format("woff2");
+    font-family: 'Linefont';
+    font-style: normal;
+    font-weight: normal;
+    }
+
+@font-face {
+    src: url("fonts/Jost-VF.woff2"), format("woff2");
+    font-family: 'Jost-VF';
+    font-style: normal;
+    font-weight: normal;
+    }
+
+    body{
+        background-color: whitesmoke;
+
+
+    }
+.footer-wrapper {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+        "t t t t h h h h h h h h"
+        "t t t t c c c c c c c c"
+        "m f f f f f f f f r r r";
+}
+
+.header {
+    grid-area: h;
+}
+
+.menu {
+    grid-area: m;
+}
+
+.content {
+    grid-area: c;
+}
+
+.footer {
+    grid-area: f;
+}
+.text-wrapper {
+    grid-area: t; 
+    margin-left: 25px;
+}
+h2 {
+    font-family: "Jost-VF";
+    font-size: 11pt;
+    font-variation-settings: "wght" 156, "ital" 1;
+
+}
+h1 {
+    font-family: "Linefont";
+    font-size: 11pt;
+    font-variation-settings: "wdth" 163, "wght" 45;
+}
+.icon-wrapper {
+    grid-area: r;
+    margin-right: 25px;
+}
