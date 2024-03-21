@@ -1,6 +1,6 @@
-*{
+/* *{ */
     /* border: 3px blue dashed; */
-}
+/* } */
 @font-face {
     src: url("fonts/Linefont-VariableFont_wdth\,wght.woff2"), format("woff2");
     font-family: 'Linefont';
@@ -76,6 +76,8 @@ h3 {
     line-height: 58px;
     color: #373737;
     grid-area: t;
+    font-variation-settings: "wght" 150, "ital" 1;
+
 }
 .play-wrapper {
     grid-area: h;
@@ -97,10 +99,10 @@ h3 {
     grid-template-rows: 40px auto 40px;
     grid-template-areas: 
         "t t t w w w w w w t t t"
-        "t t t t t t t t t t t t"
-        "t t t t t t t t t t t t"
-        "t t t t t t t t t t t t"
-        "t t t t t t t t t t t t";
+        "t t f f f t t t t t t t"
+        "t t f f f t t t t t t t"
+        "t t x x x t t t t t t t"
+        "t t x x x t t t t t t t";
 }
 h4 {
 position: absolute;
@@ -118,4 +120,23 @@ font-variation-settings: "wdth" 163, "wght" 15;
 
 color: #373737;
 grid-area: w
+}
+h5 {
+font-family: 'Linefont';
+font-style: normal;
+font-size: 35px;
+line-height: 40px;
+color: #373737;
+font-variation-settings: "wdth" 179, "wght" 10;
+grid-area: f;
+}
+h6 {
+font-family: 'Jost-VF';
+font-style: italic;
+font-weight: 200;
+font-size: 20px;
+line-height: 45px;
+color: rgba(55, 55, 55, 0.8);
+font-variation-settings: "wght" 200, "ital" 1;
+grid-area: x;
 }
