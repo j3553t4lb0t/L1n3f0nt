@@ -1,6 +1,6 @@
-/* *{
-    border: 3px blue dashed;
-} */
+*{
+    border: 1px rgb(0, 0, 255) dashed;
+}
 @font-face {
     src: url("fonts/Linefont-VariableFont_wdth\,wght.woff2"), format("woff2");
     font-family: 'Linefont';
@@ -20,6 +20,24 @@
 
 
     }
+
+.bg-wrapper {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "n"
+        "n"
+        "n";
+}
+.picture {
+    grid-row-start: 2;
+    z-index: -1;
+
+}
+
 
 h2 {
     font-family: "Jost-VF";
@@ -58,26 +76,29 @@ h4 {
 }
     .header-title-wrap {
         grid-area: q;
+
     }
     .play-wrapper {
         grid-area: v;
         margin-top: 30px;
+
     }
     .download-wrapper {
         grid-area: l;
         margin-top: 30px;
+
     }
     .play {
         text-align: center;
         padding-left: 5px;
         padding-right: 5px;
-        color:#373737
+        color:#373737;
     }
     .download {
         text-align: center;
         padding-left: 5px;
         padding-right: 5px;
-        color:#373737
+        color:#373737;
     }
     .title {
         font-family: 'Jost-VF';
@@ -116,6 +137,7 @@ h4 {
         grid-column-end: 10;
         margin-bottom: 0;
         margin-top: 0;
+
     }
     .hero-jost {
     text-align: center; 
@@ -123,6 +145,7 @@ h4 {
     grid-column-end: 8;
     margin-bottom: 75px;
     grid-row-start: 2;
+
     }
     .body-description-lf {
         grid-row-start: 3;
