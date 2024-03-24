@@ -26,11 +26,12 @@
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 2000px;
     grid-template-areas: 
         "n"
         "n"
         "n";
+    z-index: -1;
 }
 .picture {
     grid-row-start: 2;
@@ -73,6 +74,7 @@ h4 {
     grid-template-rows: auto;
     grid-template-areas: 
         "q q q q q q q q q q v l";
+    z-index: 1;
 }
     .header-title-wrap {
         grid-area: q;
@@ -126,7 +128,7 @@ h4 {
         "a a a a a a a a a a a a"
         "a a a a a a a a a a a a";
 }
-    .hero {
+    .fade-in-text-1 {
         text-align: center;
         font-family: "Linefont";
         font-size: 180px;
@@ -137,8 +139,12 @@ h4 {
         grid-column-end: 10;
         margin-bottom: 0;
         margin-top: 0;
-
+        animation: fadeIn 10s;
     }
+    @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
     .hero-jost {
     text-align: center; 
     grid-column-start: 6;
@@ -210,7 +216,6 @@ h4 {
     }
     .shunk {
         font-variation-settings: "wdth" 0, "wght" 15;
-
     }
 
 .baudry-two-wrapper {
@@ -218,7 +223,7 @@ h4 {
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-areas: 
         "a a a a b b b b a a a a"
         "a a a a c c c c a a a a"
@@ -269,7 +274,7 @@ h4 {
         font-size: 50pt;
         margin-top: 75px;
     }
-    .dmitry {
+    .la {
         text-align: center;
         grid-row-start: 6;
         grid-column-start: 4;
@@ -277,6 +282,36 @@ h4 {
         font-size: 15pt;
         font-weight: 100;   
     }
+    .name {
+        text-align: center;
+        grid-row-start: 7;
+        grid-column-start: 4;
+        grid-column-end: 9;
+        font-size: 50pt;
+        margin-top: 75px;
+    }
+    .name2 {
+        text-align: center;
+        grid-row-start: 8;
+        grid-column-start: 4;
+        grid-column-end: 9;
+        font-size: 15pt;
+        font-weight: 100;
+    }
+.text-box {
+    text-align: right;
+}
+.caption {
+    align-items: center;
+    margin-left: 675px;
+    margin-bottom: 0;
+    text-align: right;
+    margin-right: 60px;
+}
+.example-one {
+    margin-top: 0;
+    margin-right: 60px;
+}
 
 .footer-wrapper {
     height: 100%;
@@ -306,6 +341,4 @@ h4 {
         grid-area: g;
         margin-top: 50px;
     }
-
-
 
