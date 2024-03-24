@@ -21,24 +21,6 @@
 
     }
 
-.bg-wrapper {
-    height: 100%;
-    display: grid;
-    grid-gap: 3px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 2000px;
-    grid-template-areas: 
-        "n"
-        "n"
-        "n";
-    z-index: -1;
-}
-.picture {
-    grid-row-start: 2;
-    z-index: -1;
-
-}
-
 
 h2 {
     font-family: "Jost-VF";
