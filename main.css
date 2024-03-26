@@ -147,14 +147,114 @@ h4 {
         grid-column-end: 7;
     }
 
-    .weight-list {
-        grid-column-start: 9;
-        grid-column-end: 11;
+    .white-list {
+        grid-column-start: 8;
+        grid-column-end: 8;
         grid-row-start: 3;
         grid-row-end: 4;
         text-align: left;
         margin-top: 0;
     }
+    .one {
+        font-variation-settings: "wght" 100;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+    .two {
+        font-variation-settings: "wght" 200;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .three {
+        font-variation-settings: "wght" 300;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .four {
+        font-variation-settings: "wght" 400;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .five {
+        font-variation-settings: "wght" 500;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .six {
+        font-variation-settings: "wght" 600;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .seven {
+        font-variation-settings: "wght" 700;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .eight {
+        font-variation-settings: "wght" 800;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .nine {
+        font-variation-settings: "wght" 900;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .weight-list {
+        grid-column-start: 9;
+        grid-column-end: 12;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        text-align: left;
+        margin-top: 0;
+        
+    }
+    .thin {
+        font-variation-settings: "wght" 100;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+    .extra-light {
+        font-variation-settings: "wght" 200;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .light {
+        font-variation-settings: "wght" 300;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .regular {
+        font-variation-settings: "wght" 400;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .medium {
+        font-variation-settings: "wght" 500;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .semi-bold {
+        font-variation-settings: "wght" 600;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .bold {
+        font-variation-settings: "wght" 700;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .extra-bold {
+        font-variation-settings: "wght" 800;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .black {
+        font-variation-settings: "wght" 900;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     h5 {
         font-size: 23pt;
         font-family: "Jost-VF";
@@ -163,6 +263,9 @@ h4 {
         letter-spacing: 0.4em;
 
     color: #373737;
+    }
+    .stitch {
+        margin-top: 40px;
     }
     .stretch {
         grid-column-start: 3;
@@ -175,13 +278,12 @@ h4 {
         font-variation-settings: "wdth" 200, "wght" 15;
         color: #373737;
         text-align: center;
-        margin-top: 40px;
         margin-bottom: 0;
     }
     .loooong {
         font-variation-settings: "wght" 100, "ital" 1;
         text-align: center;
-        font-size: 18pt;
+        font-size: 17pt;
         margin-top: 0;
     }
     .shrink {
@@ -192,12 +294,13 @@ h4 {
     .honey-i-shrunk-the-text {
         font-variation-settings: "wght" 100, "ital" 1;
         text-align: center;
-        font-size: 18pt;
+        font-size: 17pt;
         margin-top: 0;
         letter-spacing: -0.1em;
     }
     .shunk {
         font-variation-settings: "wdth" 0, "wght" 15;
+        margin-top: 40px;
     }
 
 .baudry-two-wrapper {
@@ -322,5 +425,6 @@ h4 {
     .tumblr {
         grid-area: g;
         margin-top: 50px;
+        margin-bottom: 400px;
     }
 
