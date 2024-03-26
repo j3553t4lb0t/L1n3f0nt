@@ -158,47 +158,64 @@ h4 {
     .one {
         font-variation-settings: "wght" 100;
         margin-top: 0;
-        margin-bottom: 12px;
+        margin-bottom: 0;
+        line-height: 1;
     }
     .two {
         font-variation-settings: "wght" 200;
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1;
+
     }
     .three {
         font-variation-settings: "wght" 300;
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1;
+
     }
     .four {
         font-variation-settings: "wght" 400;
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1;
+
     }
     .five {
         font-variation-settings: "wght" 500;
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1;
+
     }
     .six {
         font-variation-settings: "wght" 600;
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1;
+
     }
     .seven {
         font-variation-settings: "wght" 700;
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1;
+
     }
     .eight {
         font-variation-settings: "wght" 800;
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1;
+
     }
     .nine {
         font-variation-settings: "wght" 900;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1;
+
     }
     .weight-list {
         grid-column-start: 9;
